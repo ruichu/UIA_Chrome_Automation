@@ -1,4 +1,6 @@
-﻿using FlaUI.Core;
+﻿using System;
+using System.Threading;
+using FlaUI.Core;
 using FlaUI.Core.AutomationElements;
 using FlaUI.UIA3;
 using System.Diagnostics;
@@ -12,8 +14,8 @@ namespace UIA_Chrome_Automation
             // 启动Chrome浏览器
             var processStartInfo = new ProcessStartInfo
             {
-                FileName = "chrome.exe",
-                Arguments = "--new-window https://www.google.com" // 可以修改为其他URL
+                FileName = ChromeLocator.GetChromeExecutablePath(),
+                Arguments = "--force-renderer-accessibility --new-window https://www.google.com"
             };
 
             try
