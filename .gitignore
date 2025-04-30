@@ -1,0 +1,22 @@
+## .NET Core
+bin/
+obj/
+*.user
+*.userosscache
+*.suo
+*.userprefs
+.vs/
+.vscode/
+*.swp
+*.*~
+project.lock.json
+.DS_Store
+*.pyc
+
+## Visual Studio for Mac
+.idea/
+*.sln.iml
+
+## Rider
+.idea/
+*.sln.iml
